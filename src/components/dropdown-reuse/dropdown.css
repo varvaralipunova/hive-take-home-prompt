@@ -1,0 +1,147 @@
+#list {
+  --main: #017ecc 
+}
+
+.select-wrap {
+  position: relative;
+  width: 100%
+}
+
+.label {
+  position: absolute;
+  top: -6px;
+  margin: 0 0 0 10px;
+  padding:0 5px;
+  color: #017ecc;
+  background-color: white;
+  z-index: 5;
+  font-size:12px;
+}
+
+#list {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  border: 2px solid var(--main);
+  border-radius: 5px;
+  height: 100%;
+  position: relative;
+}
+
+.list-title {
+  padding: 10px 15px;
+}
+
+.selected, ul li:hover{
+  background-color: rgb(173,216,230, 0.3);
+}
+
+ul {
+  padding: 5px 0 15px;
+  margin-top: 0px;
+  box-shadow: 0px 5px 10px rgb(105,105,105, 0.5);
+  border-radius: 5px
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 0;
+  text-align: left;
+}
+
+ul li label {
+  padding: 15px 20px
+}
+
+#list svg:hover, #list:hover, ul:hover {
+  cursor: pointer;
+}
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.closedIcon svg, .openedIcon svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  fill: grey;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.d-none {
+  display: none;
+}
+
+.checkbox-cont {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-cont input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 2px
+}
+
+.checkbox-cont input:checked ~ .checkmark {
+  background-color: #2196F3;
+  border: none
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-cont .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.title-wrap{
+  margin-left: 1.5rem
+} 
+
+.title-wrap.single{
+  margin-left: 0;
+} 
+
+.singleLi {
+  padding: 10px
+}
