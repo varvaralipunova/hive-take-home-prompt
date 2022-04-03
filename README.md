@@ -1,5 +1,5 @@
 
-To run the project locally in the project directory, you can run:
+To run the project locally:
 
 ### `npm start`
 
